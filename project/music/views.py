@@ -58,6 +58,11 @@ def singer_detail_update_delete(request, singer_id):
 
         return Response(data=SingerSerializer(singer).data)
     
+    elif request.method == 'DELETE': # 삭제 기능 추가
+        singer.delete()
+        return Response()
+
+    
 @api_view(['GET', 'POST'])
 def song_read_create(request, singer_id):
     singer = get_object_or_404(Singer, id=singer_id)
