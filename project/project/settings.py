@@ -139,14 +139,16 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [BASE_DIR / 'static'] #개발자용 static 폴더
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+] #개발자용 static 폴더
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles' #배포용 수집 위치
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #배포용 수집 위치
 
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
