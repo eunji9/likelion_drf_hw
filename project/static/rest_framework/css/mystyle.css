@@ -1,0 +1,55 @@
+/* cute_style.css */
+body {
+    background-color: #FFF0F5; 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    }
+
+h1, h2, h3 {
+    color: #FF69B4; 
+    text-align: center;
+    }
+    
+pre {
+    background-color: #FFF8FB; 
+    border: 2px dashed #FFB6C1;
+    padding: 20px;
+    border-radius: 12px;
+    color: #4B0082;
+    font-size: 14px;
+    overflow-x: auto;
+    }
+
+code {
+    color: #C71585;
+    font-weight: bold;
+    }
+
+input, textarea {
+    border: 2px solid #FFB6C1;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    }
+
+button, input[type="submit"] {
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    }
+
+    button:hover, input[type="submit"]:hover {
+    background-color: #FF1493;
+    }
+
+    label {
+    font-weight: bold;
+    color: #DB7093;
+    }
